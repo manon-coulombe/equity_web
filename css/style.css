@@ -15,6 +15,11 @@
   src: url('../fonts/MPLUSRounded1c-Black.ttf');
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+
 html {
   color: #222;
   font-size: 1em;

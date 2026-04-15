@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte — equity</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #FDDDDB;
+            min-height: 100vh;
+            padding: 3rem 1.5rem;
+            color: #111;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .app-name {
+            font-family: 'M PLUS 1', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: lowercase;
+            color: #111;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+            margin-bottom: 1rem;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: steps;
+        }
+
+        .steps li {
+            counter-increment: steps;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        .steps li:last-child { border-bottom: none; }
+
+        .steps li::before {
+            content: counter(steps);
+            min-width: 26px;
+            height: 26px;
+            background: #FDDDDB;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #111;
+            flex-shrink: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #999;
+            padding: 0 0 0.75rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .data-table td {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #222;
+            vertical-align: top;
+        }
+
+        .data-table tr:last-child td { border-bottom: none; }
+
+        .data-table td:first-child { font-weight: 500; padding-right: 1rem; width: 40%; }
+
+        .cta {
+            background: #111;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .cta:hover { background: #333; }
+
+        .note {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="app-name">equity</div>
+
+    <h1>Supprimer mon compte et mes données</h1>
+    <p class="subtitle">Vous pouvez demander la suppression de votre compte equity et de toutes les données associées à tout moment, sans frais.</p>
+
+    <div class="card">
+        <h2>Comment faire une demande</h2>
+        <ol class="steps">
+            <li>Envoyez un email à <strong>manon.coulombe.dev@gmail.com</strong> depuis l'adresse associée à votre compte.</li>
+            <li>Indiquez en objet : <strong>« Demande de suppression de compte »</strong></li>
+            <li>Nous confirmons la réception sous 48h et traitons votre demande sous 30 jours.</li>
+            <li>Vous recevrez une confirmation par email une fois la suppression effectuée.</li>
+        </ol>
+
+        <a class="cta" href="mailto:manon.coulombe.dev@gmail.com?subject=Demande%20de%20suppression%20de%20compte">
+            Envoyer la demande par email
+        </a>
+        <p class="note">Vous serez redirigé vers votre application email.<br>Aucun formulaire requis.</p>
+    </div>
+
+    <div class="card">
+        <h2>Données supprimées et conservées</h2>
+        <table class="data-table">
+            <thead>
+            <tr>
+                <th>Type de donnée</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Compte utilisateur</td>
+                <td>Supprimé définitivement</td>
+            </tr>
+            <tr>
+                <td>Adresse email</td>
+                <td>Supprimée définitivement</td>
+            </tr>
+            <tr>
+                <td>Données d'utilisation</td>
+                <td>Supprimées définitivement</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        © 2026 equity · <a href="/privacy.html" style="color: #aaa;">Politique de confidentialité</a>
+    </div>
+
+</div>
+</body>
+</html>
